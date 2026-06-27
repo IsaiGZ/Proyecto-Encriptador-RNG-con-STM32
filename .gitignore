@@ -1,55 +1,83 @@
-# Prerequisites
-*.d
-
-# Object files
+# =========================================================
+# STM32 / ARM build outputs
+# =========================================================
 *.o
-*.ko
-*.obj
+*.d
 *.elf
-
-# Linker output
-*.ilk
+*.bin
+*.hex
 *.map
-*.exp
+*.lst
+*.su
+*.srec
+*.dis
+*.sym
 
-# Precompiled Headers
-*.gch
-*.pch
+build/
+obj/
+out/
+Debug/
+Release/
 
-# Libraries
-*.lib
+# =========================================================
+# Libraries / generated archives
+# =========================================================
 *.a
 *.la
 *.lo
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# =========================================================
+# Python
+# =========================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
 
-# Executables
-*.exe
+.venv/
+venv/
+env/
+
+# =========================================================
+# LaTeX generated files
+# =========================================================
+*.aux
+*.log
 *.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# =========================================================
+# Editor / OS junk
+# =========================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# =========================================================
+# Temporary files / captures
+# =========================================================
+*.tmp
+*.capture
 
-# debug information files
-*.dwo
+# =========================================================
+# Final compressed delivery files
+# =========================================================
+*.zip
+*.tar.gz
+*.tgz
